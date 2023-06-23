@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: red;
+
+}
+
+header {
+    padding: 20px;
+    background-color: #333333;
+    color: #fff;
+}
+
+.p, #comentario {
+    justify-content: center;
+    background-color: red;
+    display: flex;
+}
+
+main {
+    background-color: #008000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.player,
+.dealer {
+    margin: 0 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards .card {
+    width: 60px;
+    height: 90px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.player p,
+.dealer p {
+    margin: 10px 0;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
