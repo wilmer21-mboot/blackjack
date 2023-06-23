@@ -137,13 +137,13 @@ function renderPoints() {
 // Check if the player or dealer has blackjack
 function checkBlackjack() {
   if (playerPoints === 21 && dealerPoints === 21) {
-    messageElement.textContent = 'Push! Both player and dealer have blackjack.';
+    messageElement.textContent = 'Empate';
     endGame();
   } else if (playerPoints === 21) {
-    messageElement.textContent = 'Player wins with blackjack!';
+    messageElement.textContent = 'Jugador obtuvo un blackjack!';
     endGame();
   } else if (dealerPoints === 21) {
-    messageElement.textContent = 'Dealer wins with blackjack!';
+    messageElement.textContent = 'Sistema obtuvo un blackjack!';
     endGame();
   }
 }
@@ -151,10 +151,10 @@ function checkBlackjack() {
 // Check if the player or dealer has busted
 function checkBust() {
   if (playerPoints > 21) {
-    messageElement.textContent = 'Player busts! Dealer wins.';
+    messageElement.textContent = 'Jugador se excedió! Sistema gana.';
     endGame();
   } else if (dealerPoints > 21) {
-    messageElement.textContent = 'Dealer busts! Player wins.';
+    messageElement.textContent = 'Sistema se excedió! Jugador gana.';
     endGame();
   }
 }
@@ -183,11 +183,11 @@ function playerStand() {
 // Check the winner of the game
 function checkWinner() {
   if (playerPoints > dealerPoints) {
-    messageElement.textContent = 'Player wins!';
+    messageElement.textContent = 'Jugador gana!';
   } else if (playerPoints < dealerPoints) {
-    messageElement.textContent = 'Dealer wins!';
+    messageElement.textContent = 'Sistema gana!';
   } else {
-    messageElement.textContent = 'Push! It\'s a tie.';
+    messageElement.textContent = 'Hubo un Empate.';
   }
   endGame();
 }
